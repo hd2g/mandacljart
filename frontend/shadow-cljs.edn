@@ -7,5 +7,9 @@
  :dependencies
  []
 
+ :dev-http {8080 "public"}
+
  :builds
- {}}
+ {:hello
+  {:target :browser
+   :modules {:main {:init-fn frontend.core/init}}}}}
